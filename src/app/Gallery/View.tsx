@@ -14,7 +14,7 @@ function View({ src, tag }: { src: string; tag: string[] }) {
     <div className="relative">
       {/* image */}
       <CldImage
-        className="rounded border-blue-200 border-4 w-auto h-auto"
+        className="rounded  border-blue-200 border-4  h-auto"
         width="400"
         height="300"
         src={src}

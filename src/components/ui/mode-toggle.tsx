@@ -12,12 +12,12 @@ export function ModeToggle() {
   const { setTheme } = useTheme()
   const[count,setcount]=useState(false)
   function handleClick() {
-    if (count===true) {
-        setTheme("light")
-        setcount(false)
+    if (count===false) {
+      setTheme("dark")
+      setcount(true)
     }else{
-        setTheme("dark")
-        setcount(true)
+      setTheme("light")
+      setcount(false)
     }
   }
 

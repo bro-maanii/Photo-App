@@ -39,7 +39,7 @@ function View({ src, tag }: { src: string; tag: string[] }) {
       </div>
 
       {/* Edit icon */}
-      <Link href={`/Edit/?${src}`}>
+      <Link href={`/Edit/?publicId=${src}`}>
         <div className="absolute top-2 left-2">
           <EditIcon className="sm:mr-2 h-6 w-6 sm:h-8 sm:w-8 hover:text-red-500  cursor-pointer " />
         </div>

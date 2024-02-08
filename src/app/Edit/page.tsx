@@ -1,20 +1,22 @@
 "use client";
 import React from "react";
-import Tab from "./Tabs";
+import DemoTab from "./Tabs";
 
 const page = ({
-  searchParams: publicId,
+  searchParams: {publicId},
 }: {
-  searchParams: { publicId: any };
+  searchParams: { publicId: string  };
 }) => {
-  const key = Object.keys(publicId)[0];
-
+  // const key = Object.keys(publicId)[0];
+  // console.log(publicId)
   return (
+    <>
     <div>
       <h1 className="text-4xl text-bold mb-9 pt-2 pl-4 md:pl-0">EDIT</h1>
-
-      <Tab src={key} />
+      <DemoTab src={publicId} />
     </div>
+    
+    </>
   );
 };
 

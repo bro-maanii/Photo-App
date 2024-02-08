@@ -3,7 +3,7 @@ import { CldImage } from "next-cloudinary";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-function Tab({ src }: { src: string }) {
+function DemoTab({ src }: { src: string }) {
   return (
     <Tabs defaultValue="original" className="py-4 px-3 w-full">
       <div className="flex flex-col">
@@ -149,4 +149,4 @@ function Tab({ src }: { src: string }) {
   );
 }
 
-export default Tab;
+export default DemoTab;

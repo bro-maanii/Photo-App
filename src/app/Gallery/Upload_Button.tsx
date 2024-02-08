@@ -33,7 +33,8 @@ function UploadButton() {
         </svg>
         <CldUploadButton
           className=" rounded-xl p-2 sm:font-bold "
-          uploadPreset="thdvoy4v"
+          // uploadPreset="thdvoy4v"
+          uploadPreset="v15nmgol"
           onUpload={(result) => {
             let res = result as Uploadresult;
             setTimeout(() => {
